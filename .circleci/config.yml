@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-chrome:
-          chrome-version: 91.0.4472.81
+          chrome-version: 92.0.4515.40
       - run: |
           ruby --version
           node --version
