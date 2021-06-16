@@ -2,21 +2,21 @@ version: 2.1
 jobs:
   one:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: cimg/ruby:3.0.1
     steps:
       - checkout
       - run: echo "A first hello setup"
-      - run: sleep 25
+      - run: sleep 30
   two:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/ruby:3.0.1
     steps:
       - checkout
       - run: echo "Second hello setup 2"
-      - run: sleep 15
+      - run: sleep 30
 workflows:
   version: 2
   one_and_two:
     jobs:
-      - one
       - two
+      - one
