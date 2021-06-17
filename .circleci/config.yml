@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   browser-tools: circleci/browser-tools@1.1.3
+  node: circleci/node@4.5.1
 jobs:
   build:
     docker:
@@ -9,8 +10,16 @@ jobs:
       - checkout
       - browser-tools/install-chrome:
           chrome-version: 89.0.4389.90
+      - node/install:
+          node-version: 14.5.0
+          install-npm: true
+          install-yarn: true
+
       - run: |
           ruby --version
           node --version
           java --version
           google-chrome --version
+          node --version
+          npm --version
+          yarn --version
