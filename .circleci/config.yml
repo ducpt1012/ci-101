@@ -12,7 +12,6 @@ jobs:
           chrome-version: 89.0.4389.90
       - node/install:
           node-version: 14.5.0
-          install-npm: true
           install-yarn: true
 
       - run: |
