@@ -11,9 +11,9 @@ jobs:
       - browser-tools/install-chrome:
           chrome-version: 89.0.4389.90
       - node/install:
-          node-version: 14.5.0
+          npm-version: 7.17.0
           install-yarn: true
-
+          node-version: 14.5.0
       - run: |
           ruby --version
           node --version
