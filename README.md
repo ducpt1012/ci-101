@@ -1,4 +1,3 @@
 # ci-101
 
-
-changed!
+Some demo to setup CI and check the result.
