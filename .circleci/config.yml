@@ -40,7 +40,4 @@ jobs:
           node --version
           java --version
           google-chrome --version
-          node --version
-          npm --version
-          yarn --version
           echo $JAVA_HOME
